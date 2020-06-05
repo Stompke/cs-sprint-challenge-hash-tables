@@ -13,8 +13,8 @@ def get_indices_of_item_weights(weights, length, limit):
             if i > weight1:
                 return [i, weight1]
             elif weight1 >= i:
-                print([weight1, i])
                 return [weight1, i]
         else:
+            # save number as the key, and index as the value.
             cache[weights[i]] = i
     return None
